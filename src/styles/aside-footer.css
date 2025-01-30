@@ -1,0 +1,100 @@
+body {
+    background-color: var(--black-bg);
+    font-family: var(--font-dm-sans);
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    background-color: var(--black-bg);
+    padding: 12px;
+}
+
+.sidebar .logo {
+    background-color: var(--light-black-bg);
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.sidebar .logo img {
+    width: 80px;
+}
+
+.sidebar__navigation {
+    background-color: var(--light-black-bg);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0px 20px 10px 20px;
+}
+
+.sidebar nav ul li {
+    padding: 10px 0px;
+}
+
+.sidebar nav ul li a {
+    color: var(--light-gray);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sidebar nav ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+.sidebar nav ul li a:hover {
+    color: var(--white);
+}
+
+.library {
+    background-color: var(--light-black-bg);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+    color: var(--light-gray);
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.library__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library__button {
+    margin-right: 10px;
+    color: var(--light-gray);
+    background-color: transparent;
+    border: 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+    display: flex;
+}
+
+.library .library__button .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+.library .library__content .fa-plus {
+    margin: 24px 10px;
+}
