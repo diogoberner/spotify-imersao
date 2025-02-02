@@ -26,7 +26,6 @@ body {
 .sidebar__navigation {
     background-color: var(--light-black-bg);
     border-radius: 8px;
-    cursor: pointer;
 }
 
 .sidebar nav ul {
@@ -171,5 +170,40 @@ body {
     padding: 8px;
     width: 170px;
     margin: 8px;
+    font-weight: bold;
+}
+
+.disclaimer-premium {
+    display: flex;
+    padding: 15px 40px;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+}
+
+.disclaimer-premium__title {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--white);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: var(--white);
+    color: var(--black-bg);
+    border: none;
+    border-radius: 30px;
+    padding: 14px 30px;
+    font-size: 16px;
     font-weight: bold;
 }
