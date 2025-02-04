@@ -444,13 +444,23 @@ body {
 
 #result-artist {
     padding: 20px 40px;
+    overflow: hidden;
+    max-height: 61.5vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+#result-artist::-webkit-scrollbar {
+    display: none;
 }
 
 #result-artist .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    justify-content: start;
+    gap: 30px;
     max-width: 100%;
+
 }
 
 #result-artist .artist-card {
